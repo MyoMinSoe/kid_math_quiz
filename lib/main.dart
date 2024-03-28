@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kid_math_quiz/kid_math_quizz/screen/menu_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
           ),
           centerTitle: true,
         ),
-        body: const MenuScreen(),
+        body: const Center(),
       ),
     );
   }
