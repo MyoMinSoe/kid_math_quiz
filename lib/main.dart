@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           centerTitle: true,
           foregroundColor: const Color.fromARGB(255, 84, 47, 150),
-          backgroundColor: Colors.amber.withOpacity(0.3),
+          backgroundColor: Colors.amber.withValues(alpha: 0.3),
           title: const Text('သင်္ချာပဟေဠိ'),
         ),
         body: const Body(),

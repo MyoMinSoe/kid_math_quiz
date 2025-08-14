@@ -13,7 +13,7 @@ class MenuScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(top: 20, bottom: 10, left: 20, right: 20),
-      color: Colors.blue.withOpacity(0.2),
+      color: Colors.blue.withValues(alpha: 0.2),
       child: Center(
         child: ListView(
           children: [

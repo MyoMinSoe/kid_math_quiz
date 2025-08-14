@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:kid_math_quiz/mmfont_converter.dart';
+import 'package:kid_math_quiz/kid_math_quizz/my_extension/mmfont_converter.dart';
 
 Random random = Random();
 
@@ -13,7 +13,7 @@ class SmallNumberScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         scrolledUnderElevation: 0,
-        backgroundColor: Colors.amber.withOpacity(0.3),
+        backgroundColor: Colors.amber.withValues(alpha: 0.3),
         foregroundColor: const Color.fromARGB(255, 84, 47, 150),
         title: const Text('အငယ်ကိန်း ပဟေဠိ'),
         centerTitle: true,
@@ -43,9 +43,9 @@ class _BodyState extends State<Body> {
   List<bool> btn2isEnable = List.generate(10, (index) => true);
 
   List<Color> btn2Color =
-      List.generate(10, (index) => Colors.purpleAccent.withOpacity(0.4));
+      List.generate(10, (index) => Colors.purpleAccent.withValues(alpha: 0.4));
   List<Color> btn1Color =
-      List.generate(10, (index) => Colors.purpleAccent.withOpacity(0.4));
+      List.generate(10, (index) => Colors.purpleAccent.withValues(alpha: 0.4));
 
   void isCheck(int checkIndex, int selectNum) {
     if (num1[checkIndex] < num2[checkIndex]) {
@@ -63,7 +63,7 @@ class _BodyState extends State<Body> {
     if (count == 10) {
       showDialog(
           barrierDismissible: false,
-          barrierColor: Colors.black.withOpacity(0.8),
+          barrierColor: Colors.black.withValues(alpha: 0.8),
           barrierLabel: 'အဖြေရလဒ်',
           context: context,
           builder: (context) {
@@ -90,7 +90,7 @@ class _BodyState extends State<Body> {
                 Center(
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.amber.withOpacity(0.7),
+                      backgroundColor: Colors.amber.withValues(alpha: 0.7),
                       foregroundColor: Colors.black,
                       shape: const BeveledRectangleBorder(),
                     ),
@@ -110,7 +110,7 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(20),
-      color: Colors.amberAccent.withOpacity(0.1),
+      color: Colors.amberAccent.withValues(alpha: 0.1),
       child: Center(
         child: Column(
           children: [
@@ -129,7 +129,7 @@ class _BodyState extends State<Body> {
                   itemBuilder: (context, index) {
                     return Container(
                       margin: const EdgeInsets.only(bottom: 10),
-                      color: Colors.purple.withOpacity(0.2),
+                      color: Colors.purple.withValues(alpha: 0.2),
                       width: double.infinity,
                       height: 70,
                       child: Row(

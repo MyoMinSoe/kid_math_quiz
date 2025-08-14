@@ -10,7 +10,7 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.amberAccent.withOpacity(0.1),
+      color: Colors.amberAccent.withValues(alpha: 0.1),
       padding: const EdgeInsets.only(left: 50, right: 50, top: 20, bottom: 20),
       child: Center(
         child: Column(

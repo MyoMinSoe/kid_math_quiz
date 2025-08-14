@@ -7,7 +7,7 @@ import 'package:kid_math_quiz/kid_math_quizz/screen/big_to_small_screen/big_to_s
 
 class BigToSmallPuzzle extends StatefulWidget {
   final int index;
-  BigToSmallPuzzle({required this.index});
+  const BigToSmallPuzzle({super.key, required this.index});
 
   @override
   State<BigToSmallPuzzle> createState() => _BigToSmallPuzzleState();
@@ -32,7 +32,7 @@ class _BigToSmallPuzzleState extends State<BigToSmallPuzzle> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.blueGrey.withOpacity(0.3),
+      color: Colors.blueGrey.withValues(alpha: 0.3),
       padding: const EdgeInsets.all(2),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -58,7 +58,7 @@ class _BigToSmallPuzzleState extends State<BigToSmallPuzzle> {
                             context: context,
                             builder: (context) {
                               return AlertDialog(
-                                title: Text('Result'),
+                                title: const Text('Result'),
                                 content: Text(
                                     'correct ${BigToSmallScreen.correct}\nwrong ${BigToSmallScreen.wrong}'),
                               );

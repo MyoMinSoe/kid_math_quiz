@@ -27,7 +27,7 @@ class _BigToSmallScreenState extends State<BigToSmallScreen> {
       body: Center(
         child: Column(
           children: [
-            Text('ကြီးစဉ်ငယ်လိုက်စီပါ။'),
+            const Text('ကြီးစဉ်ငယ်လိုက်စီပါ။'),
             SizedBox(
               width: width * 0.9,
               height: height * 0.8,

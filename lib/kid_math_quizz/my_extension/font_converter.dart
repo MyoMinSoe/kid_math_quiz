@@ -1,4 +1,4 @@
-extension mm on String {
+extension MM on String {
   String mmNumberfont() => replaceAll('0', '၀')
       .replaceAll('1', '၁')
       .replaceAll('2', '၂')

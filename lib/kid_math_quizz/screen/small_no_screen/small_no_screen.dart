@@ -10,6 +10,6 @@ class SmallNoScreen extends StatefulWidget {
 class _SmallNoScreenState extends State<SmallNoScreen> {
   @override
   Widget build(BuildContext context) {
-    return Center();
+    return const Center();
   }
 }
